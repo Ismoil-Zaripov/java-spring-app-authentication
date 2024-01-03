@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <title>Hello Spring Security</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
+</head>
+<body>
+
+<div>
+
+    <p th:each="authority : ${authorities}">
+        <strong th:text="${authority}"></strong>
+    </p>
+
+    <p th:text="${userCredentials}"></p>
+    <p th:text="${userDetails}"></p>
+    <p th:text="${userPrincipal}"></p>
+
+</div>
+
+</body>
+</html>
